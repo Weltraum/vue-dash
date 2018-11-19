@@ -1,0 +1,21 @@
+@mixin font($name, $path, $weight)
+  $file: './fonts/#{$path}/font'
+  font-family: $name
+  src: url('#{$file}.eot')
+  src: url('#{$file}.eot#iefix') format('embedded-opentype'), url('#{$file}.woff2') format('woff2'), url('#{$file}.otf') format('opentype'), url('#{$file}.woff') format('woff'), url('#{$file}.ttf') format('truetype'), url('#{$file}.svg#svgFontName') format('svg')
+  font-style: normal
+  font-weight: $weight
+
+@mixin fontOtf($name, $path, $weight)
+  $file: './fonts/#{$path}/font'
+  font-family: $name
+  src: url('#{$file}.otf'), url('#{$file}.otf#iefix') format('embedded-opentype')
+  font-style: normal
+  font-weight: $weight
+
+@mixin fontWoff($name, $path, $weight)
+  $file: './fonts/#{$path}/font'
+  font-family: $name
+  src: url('#{$file}.woff'), url('#{$file}.woff#iefix') format('embedded-opentype')
+  font-style: normal
+  font-weight: $weight

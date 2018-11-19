@@ -1,0 +1,55 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/essential"
+  ],
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "ecmaVersion": 2017,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": [
+    "vue",
+    "babel"
+  ],
+  "rules": {
+    "indent": [
+      "error",
+      2,
+      {"SwitchCase": 1}
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-useless-escape": "off",
+    "comma-dangle": [1, "never"],
+    "object-curly-spacing": [2, "never"],
+    "no-multi-spaces": 2,
+    "no-trailing-spaces": 1,
+    "no-multiple-empty-lines": [2, {"max": 1}],
+    "no-console": ["error", { "allow": ["error"] }]
+  },
+  "globals": {
+    "VERSION": true
+  }
+}
+
