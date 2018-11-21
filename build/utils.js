@@ -31,7 +31,7 @@ exports.cssLoaders = (options) => {
     postcss: generateLoaders(),
     sass: generateLoaders('sass', {
       indentedSyntax: true,
-      data: '@import "mixins"; @import "vars";',
+      data: '@import "vars";',
       includePaths: [`${resolve('src')}/uikit`]
     })
   };

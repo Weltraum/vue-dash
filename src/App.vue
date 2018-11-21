@@ -1,24 +1,21 @@
 <template>
   <div id="app">
-    <HelloWorld/>
+    <layout/>
   </div>
 </template>
 <script>
-import HelloWorld from 'components/HelloWorld';
+import layout from 'pages/layout';
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: {layout}
 };
 </script>
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="sass">
+@import 'index'
+#app
+  height: 100%
+
+  & > div
+    width: 100%
+    height: 100%
 </style>

@@ -31,7 +31,9 @@ module.exports = {
     alias: {
       app: src,
       components: path.join(src, 'components'),
+      plugins: path.join(src, 'plugins'),
       modules: path.join(src, 'modules'),
+      store: path.join(src, 'store'),
       pages: path.join(src, 'pages'),
       uikit: path.join(src, 'uikit'),
       services: path.join(src, 'services')
