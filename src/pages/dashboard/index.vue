@@ -13,6 +13,9 @@ export default {
 <style scoped lang="sass">
 .dashboard
   display: flex
-  width: 100%
-  flex-grow: 1
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
 </style>

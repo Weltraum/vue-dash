@@ -1,7 +1,11 @@
 <template>
   <div :class="b()">
     <header-custom :classname="b('header')"/>
-    <router-view/>
+    <div :class="b('wrapper')">
+      <transition name="fade">
+        <router-view/>
+      </transition>
+    </div>
   </div>
 </template>
 <script>
@@ -17,4 +21,8 @@ export default {
   flex-direction: column
   width: 100%
   height: 100%
+
+  &__wrapper
+    position: relative
+    flex-grow: 1
 </style>

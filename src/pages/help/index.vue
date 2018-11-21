@@ -15,4 +15,9 @@ export default {
   justify-content: center
   padding: 10vh 0
   font-size: $font_size_l
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
 </style>

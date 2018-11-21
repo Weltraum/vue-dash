@@ -19,12 +19,15 @@ module.exports = merge(baseWebpackConfig, {
     port: 8000,
     publicPath: '/',
     watchOptions: {
+      // errorOverlay: true,
+      // notifyOnErrors: true,
       poll: false
     }
   },
   plugins: [
     new webpack.DefinePlugin({
-      'process.env': JSON.stringify(process.env.NODE_ENV)
+      'process.env': JSON.stringify(process.env.NODE_ENV),
+      'apikey': JSON.stringify('JNK9ILZTJAR9LDBO')
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),

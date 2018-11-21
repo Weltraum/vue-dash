@@ -30,6 +30,7 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       app: src,
+      api: path.join(src, 'api'),
       components: path.join(src, 'components'),
       plugins: path.join(src, 'plugins'),
       modules: path.join(src, 'modules'),
@@ -45,6 +46,7 @@ module.exports = {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
+          hotRealod: true,
           loaders: styleLoaders
         }
       },

@@ -5,11 +5,12 @@
   "author": "3cLp15e7@gmail.com",
   "private": true,
   "scripts": {
-    "dev": "NODE_ENV=development webpack-dev-server --inline --progress --config ./build/webpack.config.dev.js",
+    "dev": "NODE_ENV=development webpack-dev-server --inline --hot --progress --config ./build/webpack.config.dev.js",
     "lint": "eslint --ext .js,.vue src",
     "build": "NODE_ENV=production ./node_modules/.bin/webpack --config ./build/webpack.config.prod.js"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "moment": "^2.22.2",
     "object-path": "^0.11.4",
     "prop-types": "^15.6.2",
